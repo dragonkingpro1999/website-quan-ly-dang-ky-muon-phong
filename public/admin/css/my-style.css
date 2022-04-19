@@ -1,0 +1,138 @@
+
+
+.text-red {
+  color: #fc544b !important;
+}
+.fa-pencil-alt{
+  font-size: 14px !important;
+}
+
+.form-message{
+  padding-left: 10px;
+  font-size: 14px;
+}
+.success-message {
+  border-color: #66bb6a;
+}
+
+.text-success {
+  color: #66bb6a;
+}
+.text-warning{
+  color: #ffa426;
+}
+.error-message {
+  border-color: #fc544b;
+}
+.text-error{
+  color: #fc544b;
+}
+
+#toast__message{
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 99999;
+}
+
+.toast__message{
+  min-width: 400px;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 15px 0;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.88);
+  /* transform: translateX(calc(100%) + 32px); */
+  animation: slideInLeft ease 1.5s, fadeOut linear 5s 1.5s forwards;
+}
+
+@keyframes slideInLeft{
+  from {
+    opacity: 0;
+    transform: translateX(calc(100%) + 32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to{
+    opacity: 0;
+  }
+}
+
+.toast__message + .toast__message{
+  margin-top: 24px;
+}
+.toast__icon{
+  font-size: 24px;
+}
+.toast__icon, .toast__close{
+  padding: 0 25px;
+}
+
+.toast__body{
+  flex-grow: 1;
+}
+
+.toast__title{
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.toast__msg{
+  font-size: 14px;
+  color: #888;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.toast__close{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.toast__message--danger{
+  border-color: #ff623d;
+}
+
+.toast__message--danger .toast__icon{
+  color: #ff623d;
+}
+
+.toast__message--success{
+  border-color: #47d864;
+}
+
+.toast__message--success .toast__icon{
+ color: #47d864;
+}
+
+.toast__message--danger .toast__body .toast__title{
+  color: #ff623d;
+}
+
+.toast__message--success .toast__body .toast__title{
+  color: #47d864;
+}
+
+.pointer{
+  cursor: pointer;
+}
+.fix-size-btn{
+  width: 40px !important;
+}
+.fix-size-far{
+  font-size: 14px !important;
+}
+
+
+
+
